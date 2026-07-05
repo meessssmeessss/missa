@@ -7,8 +7,8 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -24,7 +24,6 @@
     </repositories>
 
     <dependencies>
-        <!-- Paper API (werkt ook voor Spigot-plugins, en is stabieler te downloaden dan de Spigot-snapshot-server) -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -32,7 +31,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- WorldEdit - nodig voor de plot- en sportzone-selectie -->
         <dependency>
             <groupId>com.sk89q.worldedit</groupId>
             <artifactId>worldedit-bukkit</artifactId>
