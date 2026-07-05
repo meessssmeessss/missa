@@ -1,0 +1,56 @@
+name: Basis
+version: 1.0.0
+main: nl.reallife.core.RealLifeCore
+api-version: '1.21'
+softdepend: [WorldEdit]
+author: JouwNaam
+
+commands:
+  checksaldo:
+    description: Bekijk je banksaldo
+    usage: /checksaldo
+  maakover:
+    description: Maak geld over naar een andere speler
+    usage: /maakover <speler> <bedrag>
+  plotmaak:
+    description: Maak een plot van je WorldEdit-selectie
+    usage: /plotmaak <naam>
+    permission: reallife.plot.maak
+  plotadd:
+    description: Voeg een speler toe aan een plot
+    usage: /plotadd <naam> <speler>
+  plotinfo:
+    description: Bekijk informatie van het plot waar je op staat
+    usage: /plotinfo
+  sportzonemaken:
+    description: Maak de sportzone van je WorldEdit-selectie
+    usage: /sportzonemaken
+    permission: reallife.sport.zone
+  sport:
+    description: Begin met sporten om je fitheid te verhogen
+    usage: /sport
+  zetfitheid:
+    description: Zet de fitheid van een speler
+    usage: /zetfitheid <speler> <waarde>
+    permission: reallife.fitheid.zet
+  zetprefix:
+    description: Zet je chat-prefix
+    usage: /zetprefix <prefix>
+  zetstadnaam:
+    description: Wijzig de stadsnaam op het scoreboard
+    usage: /zetstadnaam <naam>
+    permission: reallife.scoreboard.beheer
+  zetscoreboardkleur:
+    description: Wijzig de kleur van het scoreboard
+    usage: /zetscoreboardkleur <kleurcode>
+    permission: reallife.scoreboard.beheer
+
+permissions:
+  reallife.plot.maak:
+    default: op
+  reallife.sport.zone:
+    default: op
+  reallife.fitheid.zet:
+    default: op
+  reallife.scoreboard.beheer:
+    default: op

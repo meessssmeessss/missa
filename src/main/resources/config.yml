@@ -1,0 +1,30 @@
+# ReallifeCore configuratie
+
+scoreboard:
+  stadnaam: "MijnStad"
+  # Kleurcode voor de stadsnaam (bold + kleur), bv &8&l
+  stadnaam-kleur: "&8&l"
+  # Kleurcode voor de rest van de informatie
+  info-kleur: "&7"
+
+fitheid:
+  start: 50
+  max: 200
+  # Aantal blokken lopen voordat je 1 punt fitheid krijgt (normaal lopen)
+  blokken-per-punt-lopen: 40
+  # Aantal blokken lopen in/rond de sportzone voordat je 1 punt fitheid krijgt (sneller)
+  blokken-per-punt-sportzone: 15
+  # Fitheid die je krijgt per succesvolle /sport sessie (15 sec)
+  punten-per-sport-sessie: 2
+  # Cooldown in seconden tussen /sport sessies
+  sport-cooldown: 60
+
+economie:
+  waarden:
+    COAL: 50
+    IRON_INGOT: 500
+    GOLD_INGOT: 1000
+    DIAMOND: 2500
+    NETHERITE_INGOT: 5000
+
+prefix-kleur: "&7"
