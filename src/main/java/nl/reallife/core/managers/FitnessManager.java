@@ -80,7 +80,7 @@ public class FitnessManager {
     public void updateEffecten(Player player, int fitheid, int maxFitheid) {
         double factor = (double) fitheid / maxFitheid;
         double snelheid = BASIS_SNELHEID + (MAX_SNELHEID - BASIS_SNELHEID) * factor;
-        var attribuut = player.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED);
+var attribuut = player.getAttribute(Attribute.MOVEMENT_SPEED);
         if (attribuut != null) {
             attribuut.setBaseValue(snelheid);
         }
